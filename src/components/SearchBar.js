@@ -23,7 +23,6 @@ class SearchBar extends React.Component  {
         <img alt="youtube" src={logo} style={{padding:'3%'}} />
         <input type="text" placeholder={"Isolation Search"} onChange={this.onInputChange}
         value={this.state.term} style={{padding:'3%'}} /> 
-        <button class="ui button" style={{size:'50px', alignItems:'center'}}>Search</button>
       </div>
     </form>
   </div>);  
