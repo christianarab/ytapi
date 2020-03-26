@@ -16,7 +16,7 @@ class App extends React.Component {
         q: term
       }
     });
-    this.setState ({ videos: response.data.items,  selectedVideo: response.data.items[0]});
+    this.setState ({ videos: response.data.items,  selectedVideo: response.data.items[0] });
   };
 
   onVideoSelect = (video) => {
@@ -25,7 +25,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="ui container">
+      <div className="ui container" style={{marginTop:'3%'}}>
         <SearchBar onFormSubmit={this.onTermSubmit} />
           <div className="ui grid">
             <div className="ui row">
