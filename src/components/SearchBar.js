@@ -21,7 +21,7 @@ class SearchBar extends React.Component  {
     <form onSubmit={this.onFormSubmit} className="ui form">
       <div className="field">
         <img alt="youtube" src={logo} style={{padding:'3%'}} />
-        <input type="text" placeholder={"Video Isolation Search"} onChange={this.onInputChange}
+        <input type="text" placeholder={"Isolation Search"} onChange={this.onInputChange}
         value={this.state.term} style={{padding:'3%'}} /> 
         <button class="ui button" style={{size:'50px', alignItems:'center'}}>Search</button>
       </div>
