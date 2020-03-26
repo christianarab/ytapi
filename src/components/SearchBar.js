@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/yt_logo_mono_light.png';
 
 
 class SearchBar extends React.Component  {
@@ -15,16 +16,18 @@ class SearchBar extends React.Component  {
   };
 
   render(){
-  return (<div className="search-bar ui segment"> 
+  return (
+  <div className="search-bar ui segment"> 
     <form onSubmit={this.onFormSubmit} className="ui form">
       <div className="field">
-        <label>Video Search</label>
-        <input type="text" onChange={this.onInputChange}
-        value={this.state.term} />
+        <img alt="youtube" src={logo} style={{padding:'3%'}} />
+        <input type="text" placeholder={"Video Isolation Search"} onChange={this.onInputChange}
+        value={this.state.term} style={{padding:'3%'}} /> 
+        <button class="ui button" style={{size:'50px', alignItems:'center'}}>Search</button>
       </div>
     </form>
   </div>);  
   }
 }
 
-export default SearchBar;
+export default SearchBar;   

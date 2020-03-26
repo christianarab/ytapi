@@ -2,11 +2,11 @@ import React from 'react';
 
 const VideoDetail = ({ video }) => {
   if (!video) {
-    return <div>Haha loading...</div>;
+    return <div>Results...</div>;
   }
 
   const videoSrc = `https://youtube.com/embed/${video.id.videoId}`;
-  
+
   return (
   <div>
     <div className="ui embed">
