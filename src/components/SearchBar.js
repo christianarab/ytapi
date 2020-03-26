@@ -20,7 +20,7 @@ class SearchBar extends React.Component  {
   <div className="search-bar ui segment"> 
     <form onSubmit={this.onFormSubmit} className="ui form">
       <div className="field">
-        <img alt="youtube" src={logo} style={{padding:'3%'}} />
+        <img alt="youtube" src={logo} style={{padding:'3%', marginRight: '50%'}} />
         <input type="text" placeholder={"Isolation Search"} onChange={this.onInputChange}
         value={this.state.term} style={{padding:'3%'}} /> 
       </div>
